@@ -10,6 +10,7 @@ function LoginComponent() {
         <small>oie</small>
       </Title>
       <Paragrafo>lorem ipsum</Paragrafo>
+      <button type="button">enviar</button>
     </Container>
   );
 }
