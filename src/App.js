@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { Router } from 'react-router-dom';
+import history from './services/history';
 import GlobalStyle from './styles/GlobalStyle';
 import Header from './components/Header';
 import Routes from './routes';
@@ -7,10 +8,10 @@ import Routes from './routes';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <Router history={history}>
         <Header />
         <Routes />
-      </BrowserRouter>
+      </Router>
       <GlobalStyle />
     </>
   );
