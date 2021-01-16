@@ -1,11 +1,10 @@
 import React from 'react';
-import { toast } from 'react-toastify';
 import { Container } from '../../styles/GlobalStyle';
 import { Title, Paragrafo } from './styled';
 
 function LoginComponent() {
-  toast.success('oi');
-  toast.error('oi');
+  // toast.success('oi');
+  // toast.error('oi');
   return (
     <Container>
       <Title isRed={false}>
