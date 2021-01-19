@@ -10,7 +10,7 @@ function LoginComponent() {
   // toast.error('oi');
   function handleClick(e) {
     e.preventDefault();
-    dispatch(Example.clicaBotao());
+    dispatch(Example.clicaBotaoRequest());
   }
   return (
     <Container>
