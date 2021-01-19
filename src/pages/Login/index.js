@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Container } from '../../styles/GlobalStyle';
 import { Title, Paragrafo } from './styled';
+import * as Example from '../../store/models/example/actions';
 
 function LoginComponent() {
   const dispatch = useDispatch();
@@ -9,9 +10,7 @@ function LoginComponent() {
   // toast.error('oi');
   function handleClick(e) {
     e.preventDefault();
-    dispatch({
-      type: 'BOTAO_CLICADO',
-    });
+    dispatch(Example.clicaBotao());
   }
   return (
     <Container>
